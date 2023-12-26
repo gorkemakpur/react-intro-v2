@@ -11,15 +11,15 @@ export default function ProductCard(props) {
                 <h5 className="card-title">{props.product.title}</h5>
                 <p className="card-text">
                     {props.product.description}
-                </p>js
+                </p>
 
                 <Link
-					to={"/ProductDetail/" + props.product.id}
-					className="btn btn-primary"
+					to={"/product-detail/" + props.product.id}
+					className="btn btn-primary col-4" 
 				>
 					Details
 				</Link>
-				<button className="btn btn-danger">Sil</button>
+				<button className="btn btn-danger col-4 float-end">Sil</button>
               </div>
             </div>
   )
